@@ -1,0 +1,13 @@
+{
+  "name": "astrid-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npx live-server --port=4173 --open=./index.html",
+    "preview": "npx live-server --port=4173 --open=./index.html",
+    "deploy": "echo \"Use GitHub Pages: push main branch and enable gh-pages deployment.\""
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

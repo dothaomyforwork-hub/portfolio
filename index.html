@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astrid Portfolio</title>
+  <meta name="description" content="Astrid — modern luxury dark-mode portfolio for premium UI/UX design." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="min-h-screen bg-slate-850 text-slate-100">
+  <div class="mx-auto max-w-7xl px-6 py-8">
+    <div id="site-header"></div>
+
+    <main class="space-y-20 pt-8">
+      <!-- HERO / INTRO SECTION -->
+      <section class="grid gap-12 lg:grid-cols-[1fr_1fr] items-center">
+        <div class="space-y-10">
+        
+          <div class="space-y-8">
+            <h1 class="brand-title text-[4.5rem] font-extrabold leading-[0.88] tracking-[-0.04em] sm:text-[5.8rem]">Hello,</h1>
+            <div class="space-y-4">
+                <p class="brand-subtitle max-w-3xl text-xl leading-9">I'm Thảo My, a UI/UX Designer with a strong curiosity for how products work and why people use them.</p>
+                <p class="brand-subtitle max-w-3xl text-xl leading-9">While design is my craft, problem-solving is what keeps me engaged. I enjoy navigating between user needs, business goals, and technical constraints to help turn ideas into products that make sense for everyone involved.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 sm:flex-row">
+            <a href="pages/projects.html" class="brand-button-primary">View Projects</a>
+            <a href="https://www.facebook.com/my.thao.7169709" target="_blank" rel="noopener noreferrer" class="brand-button-secondary">Start a project</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute -left-12 top-4 h-52 w-52"></div>
+          <div>
+            <img src="assets/reference/picture profile.png" alt="Large hero design preview" class="h-full w-full min-h-[40rem] object-cover" />
+          </div>
+        </div>
+       
+      </section>
+      <!-- END HERO -->
+      <section class="brand-grid lg:grid-cols-3 pb-12">
+         <!-- BRAND PANELS -->
+        <div class="brand-panel p-8">
+          <p class="brand-section-title">About</p>
+          <h2 class="brand-title mt-6 text-3xl">Designer-led storytelling in digital products.</h2>
+          <p class="brand-subtitle mt-5">Create premium experiences with clean layouts, generous space, and an editorial rhythm.</p>
+        </div>
+        <div class="brand-panel p-8">
+          <p class="brand-section-title">Projects</p>
+          <h2 class="brand-title mt-6 text-3xl">Selected work in premium UI design.</h2>
+          <p class="brand-subtitle mt-5">Case studies showcasing visual direction, brand identity and product interfaces with a premium agency feel.</p>
+        </div>
+        <div class="brand-panel p-8">
+          <p class="brand-section-title">Playground</p>
+          <h2 class="brand-title mt-6 text-3xl">Visual experiments and creative concepts.</h2>
+          <p class="brand-subtitle mt-5">A space for concepts, moodboards and micro-interactions before they become final projects.</p>
+        </div>
+      </section>
+        <!-- FEATURED WORK -->
+      <section class="space-y-10">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p class="brand-section-title">Featured work</p>
+            <h2 class="brand-title text-4xl font-semibold mt-2">Selected Projects.</h2>
+          </div>
+          <a href="pages/projects.html" class="brand-link">See all cases</a>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="brand-card overflow-hidden">
+            <img src="assets/reference/chamhoc-thumb.png" alt="Cham Hoc project" class="h-96 w-full object-cover" />
+            <div class="p-8">
+              <p class="brand-subtitle uppercase tracking-[0.2em]">UI/UX — Education</p>
+              <h3 class="brand-title mt-4 text-2xl">Cham Hoc</h3>
+              <p class="brand-subtitle mt-4">A learning ecosystem with clear layouts and interactive, premium experiences.</p>
+            </div>
+          </article>
+          <article class="brand-card overflow-hidden">
+            <img src="assets/reference/berally-thumb.png" alt="Berally project" class="h-96 w-full object-cover" />
+            <div class="p-8">
+              <p class="brand-subtitle uppercase tracking-[0.2em]">AI — Platform</p>
+              <h3 class="brand-title mt-4 text-2xl">Berally</h3>
+              <p class="brand-subtitle mt-4">Interface for a construction workflow platform, presenting complex data clearly and reliably.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="brand-surface p-8">
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p class="brand-section-title">Ready to create</p>
+            <h2 class="brand-title text-3xl font-medium mt-2">Build a premium brand experience.</h2>
+          </div>
+          <a href="https://www.facebook.com/my.thao.7169709" target="_blank" rel="noopener noreferrer" class="brand-button-primary">Let's collaborate</a>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

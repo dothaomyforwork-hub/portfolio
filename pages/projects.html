@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Astrid Portfolio</title>
+  <meta name="description" content="A list of Astrid's UI/UX projects." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="min-h-screen bg-slate-850 text-slate-100">
+  <div class="mx-auto max-w-7xl px-6 py-8">
+    <div id="site-header"></div>
+
+    <main class="space-y-14 pt-10">
+      <div class="w-full flex flex-col lg:flex-row justify-between gap-8">
+        <div class="space-y-4">
+          <p class="text-sm uppercase tracking-[0.35em] text-accent-300">My work</p>
+          <h1 class="text-5xl font-semibold tracking-tight text-white">Projects I've designed.</h1>
+          <p class="max-w-3xl text-slate-300 leading-8">Each project highlights the challenges, decisions and design thinking behind creating experiences that are both useful
+          for users and valuable for businesses.</p>
+        </div>
+        
+        <!-- Filter dropdown -->
+        <div class="relative inline-block mt-28 w-fillapp">
+          <button id="filterToggle" class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-surface-muted px-5 py-2.5 text-sm font-medium text-slate-300 transition hover:border-accent-400 hover:text-accent-300">
+            <svg class="h-4 w-" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+            </svg>
+            Filter
+          </button>
+          <!-- Dropdown menu -->
+          <div id="filterDropdown" class="absolute right-0 top-full z-10 hidden w-48 rounded-2xl border brand-panel shadow-2xl backdrop-blur-xl">
+            <div class="p-2">
+              <button data-filter="all" class="filter-btn w-full rounded-lg px-4 py-2.5 text-left text-sm font-medium text-white transition hover:bg-surface-strong active:bg-accent-500/20">All Projects</button>
+              <button data-filter="multi" class="filter-btn w-full rounded-lg px-4 py-2.5 text-left text-sm font-medium text-slate-400 transition hover:bg-surface-strong hover:text-slate-300">Multi Platform</button>
+              <button data-filter="website" class="filter-btn w-full rounded-lg px-4 py-2.5 text-left text-sm font-medium text-slate-400 transition hover:bg-surface-strong hover:text-slate-300">Website</button>
+              <button data-filter="app" class="filter-btn w-full rounded-lg px-4 py-2.5 text-left text-sm font-medium text-slate-400 transition hover:bg-surface-strong hover:text-slate-300">Mobile App</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="grid gap-6 lg:grid-cols-3">
+          <!-- berally -->
+        <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40 cursor-pointer" data-type="multi" data-href="berally.html">
+          <img src="../assets/reference/berally-thumb.png" alt="Berally project" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">Berally</p>
+            <h2 class="text-2xl font-semibold text-white">Social trading dashboard</h2>
+            <p class="text-slate-400  leading-7">Experience design for a social trading platform, enabling users to follow, compare and interact with investment strategies.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">UI/UX</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Design System</span>
+            </div>
+          </div>
+        </article>
+        
+        <!-- linkwave -->
+        <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40 cursor-pointer" data-type="website" data-href="linkwave.html">
+          <img src="../assets/reference/Linkwave-thumb.png" alt="Linkwave AI project" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">Linkwave AI</p>
+            <h2 class="text-2xl font-semibold text-white">Platform UI for construction</h2>
+            <p class="text-slate-400 leading-7">Interface for a construction workflow platform, ensuring complex information is presented clearly and reliably.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">AI</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Analytics</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Brand</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PeakPlus -->
+        <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40 cursor-pointer" 
+          data-type="app" data-href="peakplus.html">
+          <img src="../assets/reference/PeakPlus-thumb2.png" alt="PeakPlus project"
+            class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">PeakPlus</p>
+            <h2 class="text-2xl font-semibold text-white">Educational platform</h2>
+            <p class="text-slate-400 leading-7">An academic product helping students prepare for exams with clear layout,
+              data-driven features and lively interactions.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">EdTech</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Branding</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">UI Design</span>
+            </div>
+          </div>
+        </article>
+
+
+        
+        <!-- dressme -->
+        <!-- <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40" data-type="app">
+          <img src="../assets/reference/Dressme-thumb.png" alt="DressMe project" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">DressMe</p>
+            <h2 class="text-2xl font-semibold text-white">Mobile commerce experience</h2>
+            <p class="text-slate-400 leading-7">Design for a fashion app with an intuitive shopping experience, friendly and optimized for young users.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">E-commerce</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Fashion</span>
+            </div>
+          </div>
+        </article> -->
+
+        <!-- cham hoc -->
+        <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40 cursor-pointer" data-type="website" data-href="chamhoc.html">
+          <img src="../assets/reference/Chamhoc-thumb.png" alt="Cham Hoc project" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">Cham Hoc</p>
+            <h2 class="text-2xl font-semibold text-white">Educational platform</h2>
+            <p class="text-slate-400 leading-7">An academic product helping students prepare for exams with clear layout, data-driven features and lively interactions.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">EdTech</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Branding</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">UI Design</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- co son tra -->
+        <!-- <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40" data-type="website">
+          <img src="../assets/reference/CoSonTra-thumb.png" alt="Co Son Tra project" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">Co Son Tra</p>
+            <h2 class="text-2xl font-semibold text-white">Educational platform</h2>
+            <p class="text-slate-400 leading-7">An academic product helping students prepare for exams with clear layout,
+              data-driven features and lively interactions.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">EdTech</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Branding</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">UI Design</span>
+            </div>
+          </div>
+        </article> -->
+
+        <!-- Medic Livraison -->
+        <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40 cursor-pointer" data-type="app" data-href="medic-livraison.html">
+          <img src="../assets/reference/Medic-thumb1.png" alt="Medic Livraison project" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">Medic Livraison</p>
+            <h2 class="text-2xl font-semibold text-white">Educational platform</h2>
+            <p class="text-slate-400 leading-7">An academic product helping students prepare for exams with clear layout,
+              data-driven features and lively interactions.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">EdTech</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Branding</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">UI Design</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- My spa -->
+        <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40 cursor-pointer" 
+          data-type="app" data-href="myspa.html">
+          <img src="../assets/reference/MySpa-thumb2.png" alt="My SPa project"
+            class="h-64 w-full object-contain object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">My SPa</p>
+            <h2 class="text-2xl font-semibold text-white">Educational platform</h2>
+            <p class="text-slate-400 leading-7">An academic product helping students prepare for exams with clear layout,
+              data-driven features and lively interactions.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">EdTech</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Branding</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">UI Design</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kyrah -->
+        <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40 cursor-pointer" data-type="website" data-href="kyrah.html">
+          <img src="../assets/reference/Kyrah-thumb1.png" alt="Kyrah project" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">Kyrah</p>
+            <h2 class="text-2xl font-semibold text-white">Educational platform</h2>
+            <p class="text-slate-400 leading-7">An academic product helping students prepare for exams with clear layout,
+              data-driven features and lively interactions.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">EdTech</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Branding</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">UI Design</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PhongNha -->
+        <article class="group h-fit overflow-hidden rounded-[2rem] border brand-panel shadow-xl transition hover:-translate-y-1 hover:border-accent-400/40 cursor-pointer" data-type="website" data-href="phongnha.html">
+          <img src="../assets/reference/PhongNha-thumb.png" alt="PhongNha project" class="h-64 w-full object-cover transition duration-500 group-hover:scale-105" />
+          <div class="space-y-4 p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-accent-200">PhongNha</p>
+            <h2 class="text-2xl font-semibold text-white">Educational platform</h2>
+            <p class="text-slate-400 leading-7">An academic product helping students prepare for exams with clear layout,
+              data-driven features and lively interactions.</p>
+            <div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.2em] text-slate-400">
+              <span class="rounded-full bg-surface-muted px-3 py-2">EdTech</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">Branding</span>
+              <span class="rounded-full bg-surface-muted px-3 py-2">UI Design</span>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <section class="rounded-[2rem] border border-stone-800 bg-surface-soft p-8 shadow-xl backdrop-blur-xl">
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-accent-300">More work</p>
+            <h2 class="text-2xl font-semibold text-white">More work coming soon.</h2>
+          </div>
+          <span aria-disabled="true" title="Coming soon" class="inline-flex cursor-not-allowed items-center justify-center rounded-full border border-accent-500/40 bg-accent-500/10 px-6 py-3 text-sm text-accent-200 opacity-40">View Playground (soon)</span>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </div>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    const filterToggle = document.getElementById('filterToggle');
+    const filterDropdown = document.getElementById('filterDropdown');
+
+    // Toggle dropdown on button click
+    filterToggle.addEventListener('click', () => {
+      filterDropdown.classList.toggle('hidden');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!filterToggle.contains(e.target) && !filterDropdown.contains(e.target)) {
+        filterDropdown.classList.add('hidden');
+      }
+    });
+
+    // Project type filter functionality
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filterType = btn.dataset.filter;
+        
+        // Update active button styling in dropdown
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('active', 'text-white', 'bg-accent-500/20');
+          b.classList.add('text-slate-400');
+        });
+        btn.classList.add('active', 'text-white', 'bg-accent-500/20');
+        btn.classList.remove('text-slate-400');
+        
+        // Update filter button text
+        filterToggle.innerHTML = `<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+        </svg>
+        ${btn.textContent.trim()}`;
+        
+        // Filter projects
+        document.querySelectorAll('[data-type]').forEach(project => {
+          if (filterType === 'all' || project.dataset.type === filterType) {
+            project.style.display = '';
+          } else {
+            project.style.display = 'none';
+          }
+        });
+        
+        // Close dropdown after selection
+        filterDropdown.classList.add('hidden');
+      });
+    });
+
+    // Make project cards clickable
+    document.querySelectorAll('[data-href]').forEach(card => {
+      card.addEventListener('click', (e) => {
+        // Don't navigate if clicking on interactive elements
+        if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+        window.location.href = card.dataset.href;
+      });
+    });
+  </script>
+</body>
+</html>
