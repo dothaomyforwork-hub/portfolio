@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[PROJECT_NAME] — Astrid Portfolio</title>
+  <meta name="description" content="[PROJECT_DESCRIPTION]" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="min-h-screen bg-slate-850 text-slate-100">
+  <div class="mx-auto max-w-7xl px-6 py-8">
+    <div id="site-header"></div>
+
+    <main class="space-y-20 pt-10">
+      <!-- Breadcrumb -->
+      <div class="flex items-center gap-2 text-sm">
+        <a href="projects.html" class="text-slate-500 transition hover:text-slate-300">Projects</a>
+        <span class="text-slate-700">/</span>
+        <span class="text-accent-300">[PROJECT_NAME]</span>
+      </div>
+
+      <!-- Hero Section -->
+      <section class="space-y-8">
+        <div>
+          <p class="text-sm uppercase tracking-[0.35em] text-accent-300">Project</p>
+          <h1 class="mt-2 text-6xl font-semibold tracking-tight text-white">[PROJECT_NAME]</h1>
+          <p class="mt-4 max-w-2xl text-lg text-slate-300">[PROJECT_SHORT_DESCRIPTION]</p>
+        </div>
+
+        <!-- Quick Info Grid - Customize columns based on project needs -->
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-2xl border border-slate-800 bg-surface p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-500">Role</p>
+            <p class="mt-3 text-lg font-semibold text-white">[ROLE]</p>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-surface p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-500">Services</p>
+            <p class="mt-3 text-lg font-semibold text-white">[SERVICES]</p>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-surface p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-500">Duration</p>
+            <p class="mt-3 text-lg font-semibold text-white">[DURATION]</p>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-surface p-6">
+            <p class="text-xs uppercase tracking-[0.35em] text-slate-500">Status</p>
+            <p class="mt-3 text-lg font-semibold text-white">[STATUS]</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Image -->
+      <section class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/40 shadow-2xl">
+        <img src="../assets/reference/[PROJECT_IMAGE].png" alt="[PROJECT_NAME] interface" class="w-full object-cover" />
+      </section>
+
+      <!-- Overview Section -->
+      <section class="grid gap-12 lg:grid-cols-[1fr_0.9fr]">
+        <article class="space-y-6">
+          <div>
+            <h2 class="text-3xl font-semibold text-white">Project Overview</h2>
+            <p class="mt-4 text-slate-300 leading-8">[OVERVIEW_PARAGRAPH]</p>
+          </div>
+          
+          <div>
+            <h3 class="text-lg font-semibold text-accent-300">The Challenge</h3>
+            <p class="mt-3 text-slate-300 leading-8">[CHALLENGE_PARAGRAPH]</p>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-accent-300">Our Approach</h3>
+            <p class="mt-3 text-slate-300 leading-8">[APPROACH_PARAGRAPH]</p>
+          </div>
+
+          <!-- Optional: Add more sections as needed
+          <div>
+            <h3 class="text-lg font-semibold text-accent-300">Section Title</h3>
+            <p class="mt-3 text-slate-300 leading-8">[CONTENT]</p>
+          </div>
+          -->
+        </article>
+
+        <!-- Sidebar - Optional sidebar with key metrics/client info -->
+        <aside class="space-y-6">
+          <div class="rounded-3xl border border-accent-500/20 bg-accent-500/5 p-8 backdrop-blur-xl">
+            <p class="text-sm uppercase tracking-[0.35em] text-accent-300">Key Metrics</p>
+            <div class="mt-6 space-y-4">
+              <div>
+                <p class="text-4xl font-bold text-white">[METRIC_1]</p>
+                <p class="text-sm text-slate-400">[METRIC_1_LABEL]</p>
+              </div>
+              <div>
+                <p class="text-4xl font-bold text-white">[METRIC_2]</p>
+                <p class="text-sm text-slate-400">[METRIC_2_LABEL]</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-slate-800 bg-surface p-8">
+            <p class="text-sm uppercase tracking-[0.35em] text-slate-400">Client</p>
+            <p class="mt-3 text-lg font-semibold text-white">[CLIENT_NAME]</p>
+            <p class="mt-4 text-sm text-slate-400">[CLIENT_INDUSTRY]</p>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Design Insights Section -->
+      <section class="rounded-3xl border border-slate-800 bg-surface p-12 shadow-xl">
+        <div class="space-y-6">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-accent-300">Design Insights</p>
+            <h2 class="mt-3 text-3xl font-semibold text-white">[INSIGHTS_TITLE]</h2>
+          </div>
+          
+          <p class="text-slate-300 leading-8">[INSIGHTS_INTRO]</p>
+          
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-accent-500 flex-shrink-0"></span>
+              <span><strong>[KEY_POINT_1_TITLE]</strong> — [KEY_POINT_1_DESC]</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-accent-500 flex-shrink-0"></span>
+              <span><strong>[KEY_POINT_2_TITLE]</strong> — [KEY_POINT_2_DESC]</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-accent-500 flex-shrink-0"></span>
+              <span><strong>[KEY_POINT_3_TITLE]</strong> — [KEY_POINT_3_DESC]</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-1 h-2 w-2 rounded-full bg-accent-500 flex-shrink-0"></span>
+              <span><strong>[KEY_POINT_4_TITLE]</strong> — [KEY_POINT_4_DESC]</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- anh bo sung -->
+      <section class="grid gap-6 md:grid-cols-3">
+        <div class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/40 shadow-xl">
+          <img src="https://placehold.co/600x600/1e293b/a8b2d1?text=Image+1" alt="Placeholder 1" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+        </div>
+        <div class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/40 shadow-xl">
+          <img src="https://placehold.co/600x600/1e293b/a8b2d1?text=Image+2" alt="Placeholder 2" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+        </div>
+        <div class="overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/40 shadow-xl">
+          <img src="https://placehold.co/600x600/1e293b/a8b2d1?text=Image+3" alt="Placeholder 3" class="w-full h-full object-cover transition duration-500 hover:scale-105" />
+        </div>
+      </section>
+
+      <!-- Process Section - Optional, can be removed or customized -->
+      <section class="space-y-8">
+        <div>
+          <p class="text-sm uppercase tracking-[0.35em] text-accent-300">Process Highlights</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">[PROCESS_TITLE]</h2>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-3">
+          <div class="rounded-2xl border border-slate-800 bg-surface p-8">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent-500/15">
+              <span class="text-lg font-bold text-accent-300">1</span>
+            </div>
+            <h3 class="text-lg font-semibold text-white">[STEP_1_TITLE]</h3>
+            <p class="mt-3 text-sm text-slate-400">[STEP_1_DESC]</p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-800 bg-surface p-8">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent-500/15">
+              <span class="text-lg font-bold text-accent-300">2</span>
+            </div>
+            <h3 class="text-lg font-semibold text-white">[STEP_2_TITLE]</h3>
+            <p class="mt-3 text-sm text-slate-400">[STEP_2_DESC]</p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-800 bg-surface p-8">
+            <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent-500/15">
+              <span class="text-lg font-bold text-accent-300">3</span>
+            </div>
+            <h3 class="text-lg font-semibold text-white">[STEP_3_TITLE]</h3>
+            <p class="mt-3 text-sm text-slate-400">[STEP_3_DESC]</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="space-y-8">
+        <div>
+          <p class="text-sm uppercase tracking-[0.35em] text-accent-300">Key Features</p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">[FEATURES_TITLE]</h2>
+        </div>
+
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div class="rounded-2xl border border-stone-800 brand-panel p-8">
+            <h3 class="text-lg font-semibold text-white">[FEATURE_1_TITLE]</h3>
+            <p class="mt-3 text-slate-400 leading-7">[FEATURE_1_DESC]</p>
+          </div>
+
+          <div class="rounded-2xl border border-stone-800 brand-panel p-8">
+            <h3 class="text-lg font-semibold text-white">[FEATURE_2_TITLE]</h3>
+            <p class="mt-3 text-slate-400 leading-7">[FEATURE_2_DESC]</p>
+          </div>
+
+          <div class="rounded-2xl border border-stone-800 brand-panel p-8">
+            <h3 class="text-lg font-semibold text-white">[FEATURE_3_TITLE]</h3>
+            <p class="mt-3 text-slate-400 leading-7">[FEATURE_3_DESC]</p>
+          </div>
+
+          <div class="rounded-2xl border border-stone-800 brand-panel p-8">
+            <h3 class="text-lg font-semibold text-white">[FEATURE_4_TITLE]</h3>
+            <p class="mt-3 text-slate-400 leading-7">[FEATURE_4_DESC]</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Learnings / Takeaway Section -->
+      <section class="rounded-3xl border border-accent-500/10 bg-white/5 p-12 shadow-xl backdrop-blur-xl">
+        <p class="text-sm uppercase tracking-[0.35em] text-accent-300">Key Takeaway</p>
+        <h2 class="mt-3 text-3xl font-semibold text-white">[TAKEAWAY_TITLE]</h2>
+        <p class="mt-6 text-slate-300 leading-8">[TAKEAWAY_PARAGRAPH]</p>
+      </section>
+
+      <!-- More Projects Section -->
+      <div id="more-work-section"></div>
+    </main>
+
+    <div id="site-footer"></div>
+  </div>
+
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

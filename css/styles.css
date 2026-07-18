@@ -1,0 +1,26 @@
+@import "./design-system.css";
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+footer p,
+footer span,
+footer a {
+  color: var(--text-muted);
+}

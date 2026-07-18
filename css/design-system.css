@@ -1,0 +1,304 @@
+:root {
+  --bg: #060504;
+  --bg-strong: #0b0a09;
+  --surface: rgba(18, 17, 15, 0.86);
+  --surface-soft: rgba(255, 255, 255, 0.05);
+  --surface-strong: rgba(31, 28, 26, 0.9);
+  --surface-border: rgba(255, 255, 255, 0.09);
+  --text: #f8f8f8;
+  --text-muted: #a09f9e;
+  --text-muted-strong: #cbd5e1;
+  --accent: #F8752D;
+  --accent-soft: rgba(248, 117, 45, 0.18);
+  --accent-strong: #F8752D;
+  --shadow: 0 40px 120px rgba(0,0,0,0.45);
+  --radius: 2rem;
+  --radius-sm: 1.5rem;
+  --radius-pill: 999px;
+  --border-radius: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(248,117,45,0.12), transparent 24%),
+    radial-gradient(circle at 85% 12%, rgba(255,255,255,0.06), transparent 16%),
+    radial-gradient(circle at 25% 90%, rgba(255,255,255,0.04), transparent 18%);
+  background-size: cover;
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(248, 117, 45, 0.35);
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+
+a.brand-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.brand-link:hover {
+  color: var(--text) !important;
+}
+
+.brand-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.25rem;
+  background: rgba(248, 117, 45, 0.14);
+  color: var(--accent);
+  border: 1px solid rgba(248, 117, 45, 0.28);
+}
+
+.brand-hero-note,
+.brand-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(248, 117, 45, 0.22);
+  background: rgba(248, 117, 45, 0.12);
+  color: var(--accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.85rem 1rem;
+}
+
+.brand-card,
+.brand-panel,
+.brand-surface {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--surface-border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.brand-panel {
+  background: rgba(31, 28, 25, 0.795);
+  backdrop-filter: blur(24px);
+}
+
+.brand-surface {
+  background: rgba(17, 15, 12, 0.82);
+}
+
+.brand-button,
+.brand-button-primary,
+.brand-button-secondary {
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.brand-button {
+  padding: 1rem 1.9rem;
+}
+
+.brand-button-primary {
+padding: 1rem 1.9rem;
+  background: var(--accent);
+  color: #060605;
+  border: 1px solid transparent;
+}
+
+.brand-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 60px rgba(248, 117, 45, 0.28);
+  background: var(--accent-strong);
+}
+
+.brand-button-secondary {
+  padding: 1rem 1.9rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.brand-button-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.brand-outline,
+.brand-outline-strong {
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.brand-outline-strong {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.brand-heading {
+  color: var(--text);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.brand-title {
+  color: white;
+}
+
+.brand-subtitle {
+  color: var(--text-muted);
+}
+
+.brand-section-title {
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+}
+
+.brand-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(248, 117, 45, 0.24);
+}
+
+.brand-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.bg-accent-500\/15 {
+  background-color: rgba(248, 117, 45, 0.14) !important;
+}
+
+.bg-accent-400 {
+  background-color: var(--accent) !important;
+}
+
+.text-accent-300 {
+  color: var(--accent) !important;
+}
+
+.text-accent-200 {
+  color: rgba(248, 117, 45, 0.85) !important;
+}
+
+.bg-accent-500 {
+  background-color: var(--accent) !important;
+}
+
+.bg-accent-500\/10 {
+  background-color: rgba(248, 117, 45, 0.1) !important;
+}
+
+.bg-accent-500\/20 {
+  background-color: rgba(248, 117, 45, 0.2) !important;
+}
+
+ .bg-surface {
+   background-color: rgb(19, 19, 19) !important;
+ }
+ 
+ .bg-surface-strong {
+   background-color: rgba(23, 17, 12, 0.94) !important;
+ }
+ 
+ .bg-surface-soft {
+   background-color: rgba(44, 32, 23, 0.70) !important;
+ }
+ 
+ .bg-surface-muted {
+   background-color: rgba(45, 36, 28, 0.78) !important;
+ }
+ 
+.border-accent-500\/20 {
+  border-color: rgba(248, 117, 45, 0.2) !important;
+}
+
+.hover\:border-accent-400:hover {
+  border-color: var(--accent) !important;
+}
+
+.hover\:bg-accent-400:hover {
+  background-color: #ff9c5a !important;
+}
+
+.shadow-\[0_30px_80px_rgba\(236\,72\,153\,0\.12\)\] {
+  box-shadow: 0 30px 80px rgba(248, 117, 45, 0.14) !important;
+}
+
+.shadow-\[0_30px_80px_rgba\(236\,72\,153\,0\.14\)\] {
+  box-shadow: 0 30px 80px rgba(248, 117, 45, 0.16) !important;
+}
+
+/* Orange-accent explicit shadow utilities (used by pages to match index tone) */
+.shadow-\[0_30px_80px_rgba\(248\,117\,45\,0\.14\)\] {
+  box-shadow: 0 30px 80px rgba(248, 117, 45, 0.14) !important;
+}
+
+.shadow-\[0_30px_80px_rgba\(248\,117\,45\,0\.16\)\] {
+  box-shadow: 0 30px 80px rgba(248, 117, 45, 0.16) !important;
+}
+
+@media (min-width: 1024px) {
+  .brand-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .brand-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Static inline SVG logo sizing */
+.brand-logo-static {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Active nav state for header links */
+.brand-link.is-active {
+  color: var(--accent) !important;
+  font-weight: 700;
+}
+
+/* Disabled nav items (feature not ready yet) */
+.brand-link.is-disabled {
+  opacity: 0.35;
+  pointer-events: none;
+  cursor: not-allowed;
+  user-select: none;
+}

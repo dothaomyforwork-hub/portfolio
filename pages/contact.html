@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Astrid Portfolio</title>
+  <meta name="description" content="Contact Astrid to discuss design projects." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="min-h-screen bg-slate-850 text-slate-100">
+  <div class="mx-auto max-w-7xl px-6 py-8">
+    <div id="site-header"></div>
+
+    <main class="space-y-14 pt-10">
+      <section class="space-y-4">
+        <p class="text-sm uppercase tracking-[0.35em] text-accent-300">Contact</p>
+        <h1 class="text-5xl font-semibold tracking-tight text-white">Tell me about your project.</h1>
+        <p class="max-w-3xl text-slate-300 leading-8">I'm happy to discuss briefs, UX flows, visual direction, or any design idea you'd like to turn into a product.</p>
+      </section>
+
+      <section class="grid gap-10 lg:grid-cols-[0.95fr_0.75fr]">
+        <div class="rounded-[2rem] border border-slate-800 bg-surface p-8 shadow-xl backdrop-blur-xl">
+          <h2 class="text-3xl font-semibold text-white">Contact information</h2>
+          <div class="mt-6 space-y-6 text-slate-300">
+            <div class="rounded-3xl bg-surface-soft p-6">
+              <p class="text-sm uppercase tracking-[0.35em] text-slate-500">Email</p>
+              <p class="mt-3 text-lg font-medium text-white">dothaomey.forwork@gmail.com</p>
+            </div>
+            <div class="rounded-3xl bg-surface-soft p-6">
+              <p class="text-sm uppercase tracking-[0.35em] text-slate-500">Social</p>
+              <div class="mt-3 flex flex-wrap gap-3">
+                <a href="https://behance.net/mydo26" class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200 transition hover:border-accent-400">Behance</a>
+                <a href="https://facebook.com/my.thao.7169709" class="rounded-full border border-slate-700 px-4 py-2 text-sm text-slate-200 transition hover:border-accent-400">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="rounded-[2rem] border border-slate-800 bg-surface p-8 shadow-xl backdrop-blur-xl">
+          <h2 class="text-3xl font-semibold text-white">Send a message</h2>
+          <form id="contactForm" class="mt-8 space-y-6">
+            <label class="block text-sm uppercase tracking-[0.25em] text-slate-400">Name</label>
+            <input type="text" placeholder="Your name" class="w-full rounded-3xl border border-slate-700 bg-surface-strong px-5 py-4 text-slate-100 outline-none transition focus:border-accent-400" required />
+            <label class="block text-sm uppercase tracking-[0.25em] text-slate-400">Email</label>
+            <input type="email" placeholder="Your email" class="w-full rounded-3xl border border-slate-700 bg-surface-strong px-5 py-4 text-slate-100 outline-none transition focus:border-accent-400" required />
+            <label class="block text-sm uppercase tracking-[0.25em] text-slate-400">Project</label>
+            <textarea rows="5" placeholder="Short project description" class="w-full rounded-3xl border border-slate-700 bg-surface-strong px-5 py-4 text-slate-100 outline-none transition focus:border-accent-400" required></textarea>
+            <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-accent-500 px-6 py-4 text-sm font-semibold text-slate-950 transition hover:bg-accent-400">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </div>
+  <script src="../js/components.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
